@@ -7,10 +7,13 @@ export const Home = () => {
   const sections = [
     {
       heading: 'Our Goal',
-      image: {
-        alt: null,
-        src: null
-      },
+      images: [
+        {
+          alt: null,
+          src: null
+        }
+      ],
+      list: null,
       text: [
         `Here at Jam Cafe we don't dream of being a rockstar. We dream of helping musicians
           connect to try and be rockstars or just jam buddies.`,
@@ -33,6 +36,7 @@ export const Home = () => {
             There&apos;s no better feeling than playing music with others.
         </p>
       </section> */}
+
       <div>
         <img
           className="partition-img"
@@ -40,6 +44,7 @@ export const Home = () => {
           alt="People's hands holding up instruments"
         />
       </div>
+
       <section className="section section--features">
         <h3 className="section-heading">How We Can Help</h3>
         <ul className="list section-text">
@@ -85,6 +90,7 @@ export const Home = () => {
           </li>
         </ul>
       </section>
+
       {/* TODO: Get actual images to display the use of app */}
       <section className="section section-use">
         <h3 className="section-heading">How to Start Jamming</h3>
@@ -103,6 +109,7 @@ export const Home = () => {
           </li>
         </ul>
       </section>
+
       <section className="section section-testimonials">
         <h3 className="section-heading">Hear From Our Users</h3>
         <div className="testimonial testimonial-1">
@@ -150,6 +157,7 @@ export const Home = () => {
           </blockquote>
         </div>
       </section>
+
       <section className="section help-section">
         <h3 className="section-heading">Let Us Help You</h3>
         <p className="section-text">
