@@ -46,16 +46,16 @@ export const App = () => {
         <div className="mobile-menu">
           <ul className="mobile-menu--list">
             <li>
-              <Link to='/'>Home</Link>
+              <Link onClick={toggleMobileMenu} to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/register'>Sign Up</Link>
+              <Link onClick={toggleMobileMenu} to='/register'>Sign Up</Link>
             </li>
             <li>
-              <Link to='/login'>Login</Link>
+              <Link onClick={toggleMobileMenu} to='/login'>Login</Link>
             </li>
             <li>
-              <Link to='/about'>About</Link>
+              <Link onClick={toggleMobileMenu} to='/about'>About</Link>
             </li>
           </ul>
         </div>
