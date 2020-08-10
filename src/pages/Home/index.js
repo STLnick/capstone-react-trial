@@ -9,10 +9,10 @@ export const Home = () => {
       <section className="section">
         <h3 className="section-heading">Our Goal</h3>
         <p className="section-text">
-          Here at Jam Cafe we don't dream of being a rockstar. We dream of helping musicians
+          Here at Jam Cafe we don&apos;t dream of being a rockstar. We dream of helping musicians
           connect to try and be rockstars or just jam buddies.
           <br /><strong>We get it.</strong><br />
-            There's no better feeling than playing music with others.
+            There&apos;s no better feeling than playing music with others.
         </p>
       </section>
       <div>
@@ -95,7 +95,7 @@ export const Home = () => {
           />
           <blockquote>
             <p>
-              I love using Jam Cafe. It's a place I know I can come to when
+              I love using Jam Cafe. It&apos;s a place I know I can come to when
               I want to just jam or if I end up wanting to join a band!
             </p>
             <footer>User 1</footer>
@@ -124,7 +124,7 @@ export const Home = () => {
           />
           <blockquote>
             <p>
-              I love playing music and that's why I'm in a band. Jam Cafe
+              I love playing music and that&apos;s why I&apos;m in a band. Jam Cafe
               made it easy for me to find a quick replacement for my band
               when a member parted ways. Love it!
             </p>
@@ -135,13 +135,13 @@ export const Home = () => {
       <section className="section help-section">
         <h3 className="section-heading">Let Us Help You</h3>
         <p className="section-text">
-          It's a struggle as a working musician, no doubt. We can help make
+          It&apos;s a struggle as a working musician, no doubt. We can help make
           one part of that easier by connecting you with like-minded
           musicians for your band.
         </p>
         <br />
         <p className="section-text">
-          It's tough if you don't want to be in a band but just play some
+          It&apos;s tough if you don&apos;t want to be in a band but just play some
           music too! Especially if you and ALL of your buddies play one
           instrument... yeesh. We can open the door to others who just
           want to play for fun.
@@ -149,7 +149,7 @@ export const Home = () => {
         <br />
         <div className="flex flex--column flex--justify-center flex--align-center">
           <p className="section-text">
-            <strong>Don't play alone!</strong>
+            <strong>Don&apos;t play alone!</strong>
           </p>
           <a href="register.html" className="cta-btn bottom-cta-btn">Join to Jam</a>
         </div>
