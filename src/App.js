@@ -5,7 +5,7 @@ import {
   Route
 } from 'react-router-dom'
 
-import { Header } from './components'
+import { Footer, Header } from './components'
 import routes from './routes'
 
 import './App.css';
@@ -36,6 +36,7 @@ export const App = () => {
           component={Component}
         />
       ))}
+      <Footer />
     </Router>
   );
 }
