@@ -7,7 +7,10 @@ export const Home = () => {
   const sections = [
     {
       heading: 'Our Goal',
-      image: null,
+      image: {
+        alt: null,
+        src: null
+      },
       text: [
         `Here at Jam Cafe we don't dream of being a rockstar. We dream of helping musicians
           connect to try and be rockstars or just jam buddies.`,
