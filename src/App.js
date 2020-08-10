@@ -36,7 +36,7 @@ export const App = () => {
           {/* TODO: Hide menu on click outside of menu */}
           <img
             tabIndex="0"
-            src={require("./img/icons/menu.svg")}
+            src="img/icons/menu.svg"
             alt="Menu button"
             className="menu-btn filter-primary"
             onClick={toggleMobileMenu}
@@ -46,16 +46,32 @@ export const App = () => {
         <div className="mobile-menu">
           <ul className="mobile-menu--list">
             <li>
-              <Link onClick={toggleMobileMenu} to='/'>Home</Link>
+              <Link
+                onClick={toggleMobileMenu}
+                to='/'
+              >Home
+              </Link>
             </li>
             <li>
-              <Link onClick={toggleMobileMenu} to='/register'>Sign Up</Link>
+              <Link
+                onClick={toggleMobileMenu}
+                to='/register'
+              >Sign Up
+              </Link>
             </li>
             <li>
-              <Link onClick={toggleMobileMenu} to='/login'>Login</Link>
+              <Link
+                onClick={toggleMobileMenu}
+                to='/login'
+              >Login
+              </Link>
             </li>
             <li>
-              <Link onClick={toggleMobileMenu} to='/about'>About</Link>
+              <Link
+                onClick={toggleMobileMenu}
+                to='/about'
+              >About
+              </Link>
             </li>
           </ul>
         </div>
