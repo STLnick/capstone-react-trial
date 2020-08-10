@@ -1,16 +1,11 @@
 import React, { Fragment } from 'react'
 
+import { Hero } from '../../components'
+
 export const Home = () => {
   return (
     <Fragment>
-      <section className="section--hero flex flex--column flex--justify-end flex--align-center">
-        {/* CTA Text */}
-        <p className="hero-text">Find someone to jam with.</p>
-        <p className="hero-text">Find someone for your band.</p>
-        <p className="hero-text">Find a band to join.</p>
-        <p className="hero-text hero-text-last">Find people to play music with.</p>
-        <a href="register.html" className="cta-btn hero-btn">Join to Jam</a>
-      </section>
+      <Hero />
       <section className="section">
         <h3 className="section-heading">Our Goal</h3>
         <p className="section-text">
