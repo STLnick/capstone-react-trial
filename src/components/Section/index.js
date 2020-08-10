@@ -16,8 +16,9 @@ export const Section = ({ section: { heading, image, text } }) => {
 
   return (
     <section className="section">
-      <h3 className="section-heading">{heading}</h3>
-      {renderTexts()}
+      {heading ? <h3 className="section-heading">{heading}</h3> : null}
+      {text ? renderTexts() : null}
+      {image.src ? <img alt={image.alt} src={image.src} /> : null}
     </section>
   )
 }
