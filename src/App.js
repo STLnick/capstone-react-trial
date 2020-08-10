@@ -5,6 +5,7 @@ import {
   Route
 } from 'react-router-dom'
 
+import { Header } from './components'
 import routes from './routes'
 
 import './App.css';
@@ -26,56 +27,7 @@ export const App = () => {
   return (
     <Router>
       <div className="overlay"></div>
-      <header className="top-nav flex flex--justify-between">
-        <div className="logo-container">
-          <Link to='/'>
-            <img className="logo" src={require("./img/logo.svg")} alt="Jam Cafe logo" />
-          </Link>
-        </div>
-        <div className="top-nav-right flex flex--justify-around">
-          {/* TODO: Hide menu on click outside of menu */}
-          <img
-            tabIndex="0"
-            src="img/icons/menu.svg"
-            alt="Menu button"
-            className="menu-btn filter-primary"
-            onClick={toggleMobileMenu}
-            onKeyDown={handleMenuBtnKeyDown}
-          />
-        </div>
-        <div className="mobile-menu">
-          <ul className="mobile-menu--list">
-            <li>
-              <Link
-                onClick={toggleMobileMenu}
-                to='/'
-              >Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={toggleMobileMenu}
-                to='/register'
-              >Sign Up
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={toggleMobileMenu}
-                to='/login'
-              >Login
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={toggleMobileMenu}
-                to='/about'
-              >About
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </header>
+      <Header handleClick={toggleMobileMenu} handleKeyDown={handleMenuBtnKeyDown} />
       {routes.map(({ Component, path }, i) => (
         <Route
           key={i}
