@@ -7,26 +7,78 @@ export const Home = () => {
   const sections = [
     {
       heading: 'Our Goal',
-      images: [
-        {
-          alt: null,
-          src: null
-        }
-      ],
+      images: null,
       list: null,
       text: [
         `Here at Jam Cafe we don't dream of being a rockstar. We dream of helping musicians
           connect to try and be rockstars or just jam buddies.`,
         `We get it`,
         `There's no better feeling than playing music with others.`
-      ]
+      ],
+      title: null
+    },
+    {
+      heading: 'How We Can Help',
+      images: null,
+      list: [
+        {
+          image: {
+            alt: '',
+            className: 'feature-list-item--marker',
+            src: 'img/icons/electric-guitar.svg'
+          },
+          text: 'Search for other Musicians'
+        },
+        {
+          image: {
+            alt: '',
+            className: 'feature-list-item--marker',
+            src: 'img/icons/note_01.svg'
+          },
+          text: 'See availability to jam'
+        },
+        {
+          image: {
+            alt: '',
+            className: 'feature-list-item--marker',
+            src: 'img/icons/reel-to-reel-tape-recorder.svg'
+          },
+          text: 'Post open jam events'
+        },
+        {
+          image: {
+            alt: '',
+            className: 'feature-list-item--marker',
+            src: 'img/icons/vinyl-record.svg'
+          },
+          text: 'Post band openings'
+        },
+        {
+          image: {
+            alt: '',
+            className: 'feature-list-item--marker',
+            src: 'img/icons/audio-cable.svg'
+          },
+          text: 'Message musicians to connect'
+        }
+      ],
+      text: null,
+      title: 'features'
     }
   ]
+
+  const renderSections = () => {
+    return sections.map((sect, i) => <Section key={i} section={sect} />)
+  }
 
   return (
     <Fragment>
       <Hero />
-      <Section section={sections[0]} />
+
+      {renderSections()}
+
+      {/* <Section section={sections[0]} /> */}
+
       {/* <section className="section">
         <h3 className="section-heading">Our Goal</h3>
         <p className="section-text">
@@ -45,7 +97,9 @@ export const Home = () => {
         />
       </div>
 
-      <section className="section section--features">
+      {/* <Section section={sections[1]} /> */}
+
+      {/* <section className="section section--features">
         <h3 className="section-heading">How We Can Help</h3>
         <ul className="list section-text">
           <li className="feature-list-item flex">
@@ -89,10 +143,10 @@ export const Home = () => {
             Message musicians to connect
           </li>
         </ul>
-      </section>
+      </section> */}
 
       {/* TODO: Get actual images to display the use of app */}
-      <section className="section section-use">
+      <section className="section section--use">
         <h3 className="section-heading">How to Start Jamming</h3>
         <ul className="list use-list section-text">
           <li>
@@ -110,7 +164,7 @@ export const Home = () => {
         </ul>
       </section>
 
-      <section className="section section-testimonials">
+      <section className="section section--testimonials">
         <h3 className="section-heading">Hear From Our Users</h3>
         <div className="testimonial testimonial-1">
           <img
@@ -158,7 +212,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="section help-section">
+      <section className="section section--help">
         <h3 className="section-heading">Let Us Help You</h3>
         <p className="section-text">
           It&apos;s a struggle as a working musician, no doubt. We can help make
