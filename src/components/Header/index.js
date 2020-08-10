@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
+import { MobileMenu } from './MobileMenu'
+
 export const Header = ({ handleClick, handleKeyDown }) => {
 
   return (
@@ -23,38 +25,7 @@ export const Header = ({ handleClick, handleKeyDown }) => {
           onKeyDown={handleKeyDown}
         />
       </div>
-      <div className="mobile-menu">
-        <ul className="mobile-menu--list">
-          <li>
-            <Link
-              onClick={handleClick}
-              to='/'
-            >Home
-              </Link>
-          </li>
-          <li>
-            <Link
-              onClick={handleClick}
-              to='/register'
-            >Sign Up
-              </Link>
-          </li>
-          <li>
-            <Link
-              onClick={handleClick}
-              to='/login'
-            >Login
-              </Link>
-          </li>
-          <li>
-            <Link
-              onClick={handleClick}
-              to='/about'
-            >About
-              </Link>
-          </li>
-        </ul>
-      </div>
+      <MobileMenu handleClick={handleClick} />
     </header>
   )
 }
