@@ -1,12 +1,27 @@
 import React, { Fragment } from 'react'
 
-import { Hero } from '../../components'
+import { Hero, Section } from '../../components'
 
 export const Home = () => {
+
+  const sections = [
+    {
+      heading: 'Our Goal',
+      image: null,
+      text: [
+        `Here at Jam Cafe we don't dream of being a rockstar. We dream of helping musicians
+          connect to try and be rockstars or just jam buddies.`,
+        `We get it`,
+        `There's no better feeling than playing music with others.`
+      ]
+    }
+  ]
+
   return (
     <Fragment>
       <Hero />
-      <section className="section">
+      <Section section={sections[0]} />
+      {/* <section className="section">
         <h3 className="section-heading">Our Goal</h3>
         <p className="section-text">
           Here at Jam Cafe we don&apos;t dream of being a rockstar. We dream of helping musicians
@@ -14,7 +29,7 @@ export const Home = () => {
           <br /><strong>We get it.</strong><br />
             There&apos;s no better feeling than playing music with others.
         </p>
-      </section>
+      </section> */}
       <div>
         <img
           className="partition-img"
