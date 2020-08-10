@@ -191,7 +191,7 @@ textarea {
   width: 2rem;
 }
 
-.section-use {
+.section--use {
   background-color: #eee;
 }
 
@@ -217,7 +217,7 @@ textarea {
   width: 100%;
 }
 
-.help-section {
+.section--help {
   background-color: #eee;
 }
 
