@@ -11,6 +11,7 @@ export const Header = ({ handleClick, handleKeyDown }) => {
           <img className="logo" src="img/logo.svg" alt="Jam Cafe logo" />
         </Link>
       </div>
+      {/* IF LOGGED IN - Display Search Bar */}
       <div className="top-nav-right flex flex--justify-around">
         {/* TODO: Hide menu on click outside of menu */}
         <img
