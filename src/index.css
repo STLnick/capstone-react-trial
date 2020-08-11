@@ -107,6 +107,7 @@ textarea {
   background: none;
   border: none;
   margin: 0;
+  outline: none;
   padding: 0;
   z-index: 2;
 }
@@ -118,8 +119,8 @@ textarea {
   z-index: 2;
 }
 
-.menu-btn:focus,
-.menu-btn:hover {
+.menu-btn-container:focus,
+.menu-btn-container:hover {
   box-shadow: 0 0 2px 2px var(--primary-light);
 }
 
