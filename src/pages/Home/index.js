@@ -163,10 +163,6 @@ export const Home = () => {
     }
   ]
 
-  const renderSections = () => {
-    return sections.map((sect, i) => <Section key={i} section={sect} />)
-  }
-
   return (
     <Fragment>
       <Hero />

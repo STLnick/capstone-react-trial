@@ -1,3 +1,4 @@
+export { Card } from './Card'
 export { Footer } from './Footer'
 export { Form } from './Form'
 export { Header } from './Header'
