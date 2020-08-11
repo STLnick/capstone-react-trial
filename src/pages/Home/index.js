@@ -62,6 +62,8 @@ export const Home = () => {
           text: 'Message musicians to connect'
         }
       ],
+      listClass: '',
+      listItemClass: 'feature-list-item flex',
       text: null,
       title: 'features'
     },
