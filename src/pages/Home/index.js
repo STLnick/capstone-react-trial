@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
-import { Hero, Section } from '../../components'
+import { Hero, Section, TestimonialsSection } from '../../components'
 
 export const Home = () => {
 
@@ -264,7 +264,9 @@ export const Home = () => {
         </ul>
       </section> */}
 
-      <section className="section section--testimonials">
+      <TestimonialsSection reviews={reviews} />
+
+      {/* <section className="section section--testimonials">
         <h3 className="section-heading">Hear From Our Users</h3>
         <div className="testimonial testimonial-1">
           <img
