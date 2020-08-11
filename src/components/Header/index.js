@@ -16,14 +16,18 @@ export const Header = ({ handleClick, handleKeyDown }) => {
       {/* IF LOGGED IN - Display Search Bar */}
       <div className="top-nav-right flex flex--justify-around">
         {/* TODO: Hide menu on click outside of menu */}
-        <img
-          tabIndex="0"
-          src="img/icons/menu.svg"
-          alt="Menu button"
-          className="menu-btn filter-primary"
+        <button
+          className="menu-btn-container"
           onClick={handleClick}
           onKeyDown={handleKeyDown}
-        />
+        >
+          <img
+            tabIndex="0"
+            src="img/icons/menu.svg"
+            alt="Menu button"
+            className="menu-btn filter-primary"
+          />
+        </button>
       </div>
       <MobileMenu handleClick={handleClick} />
     </header>
