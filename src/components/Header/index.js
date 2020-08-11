@@ -7,7 +7,7 @@ import { MobileMenu } from './MobileMenu'
 export const Header = ({ handleClick, handleKeyDown }) => {
 
   return (
-    <header className="top-nav flex flex--justify-between">
+    <header className="top-nav flex flex--justify-between flex--align-center">
       <div className="logo-container">
         <Link to='/'>
           <img className="logo" src="img/logo.svg" alt="Jam Cafe logo" />
