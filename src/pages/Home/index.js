@@ -124,6 +124,44 @@ export const Home = () => {
     }
   ]
 
+  const reviews = [
+    {
+      className: 'testimonial-1',
+      image: {
+        src: "img/testimonial-1.jpg",
+        className: "testimonial-1-img",
+        alt: ""
+      },
+      quote: `I love using Jam Cafe. It's a place I know I can come to when
+        I want to just jam or if I end up wanting to join a band!`,
+      user: 'User 1'
+    },
+    {
+      className: 'testimonial-2',
+      image: {
+        src: "img/testimonial-2.jpeg",
+        className: "testimonial-2-img",
+        alt: ""
+      },
+      quote: `Jam Cafe made it so easy for me to find new people to play with.
+        All I did was search for a few local people and we got together
+        and had an awesome time!`,
+      user: 'User 1'
+    },
+    {
+      className: 'testimonial-3',
+      image: {
+        src: "img/testimonial-3.jpg",
+        className: "testimonial-3-img",
+        alt: ""
+      },
+      quote: `I love playing music and that's why I'm in a band. Jam Cafe
+        made it easy for me to find a quick replacement for my band
+        when a member parted ways. Love it!`,
+      user: 'User 1'
+    }
+  ]
+
   const renderSections = () => {
     return sections.map((sect, i) => <Section key={i} section={sect} />)
   }
