@@ -199,6 +199,10 @@ textarea {
   text-align: center;
 }
 
+.use-img {
+  width: 5rem;
+}
+
 .testimonial {
   width: 100%;
 }
