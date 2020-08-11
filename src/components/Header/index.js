@@ -21,7 +21,6 @@ export const Header = ({ handleClick, handleKeyDown }) => {
           onKeyDown={handleKeyDown}
         >
           <img
-            tabIndex="0"
             src="img/icons/menu.svg"
             alt="Menu button"
             className="menu-btn filter-primary"
