@@ -64,6 +64,43 @@ export const Home = () => {
       ],
       text: null,
       title: 'features'
+    },
+    {
+      heading: 'How To Start Jamming',
+      images: null,
+      // Need to get images to include for each li
+      // showing use of app
+      list: [
+        {
+          image: {
+            alt: '',
+            className: 'use-img',
+            src: 'img/icons/add-circle-sharp.svg'
+          },
+          text: 'Search for other Musicians'
+        },
+        {
+          image: {
+            alt: '',
+            className: 'use-img',
+            src: 'img/icons/add-circle-sharp.svg'
+          },
+          text: 'Check out profiles to see who fits'
+        },
+        {
+          image: {
+            alt: '',
+            className: 'use-img',
+            src: 'img/icons/add-circle-sharp.svg'
+          },
+          text: 'Send a message to connect'
+        }
+      ],
+      listClass: 'use-list',
+      listItemClass: '',
+      text: null,
+      title: 'use'
+    },
     }
   ]
 
