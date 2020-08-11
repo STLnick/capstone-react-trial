@@ -112,9 +112,11 @@ export const Home = () => {
     <Fragment>
       <Hero />
 
-      {renderSections()}
+      {/* {renderSections()} */}
 
       {/* <Section section={sections[0]} /> */}
+
+      <Section section={sections[0]} />
 
       {/* <section className="section">
         <h3 className="section-heading">Our Goal</h3>
@@ -134,7 +136,7 @@ export const Home = () => {
         />
       </div>
 
-      {/* <Section section={sections[1]} /> */}
+      <Section section={sections[1]} />
 
       {/* <section className="section section--features">
         <h3 className="section-heading">How We Can Help</h3>
@@ -182,8 +184,10 @@ export const Home = () => {
         </ul>
       </section> */}
 
+      <Section section={sections[2]} />
+
       {/* TODO: Get actual images to display the use of app */}
-      <section className="section section--use">
+      {/* <section className="section section--use">
         <h3 className="section-heading">How to Start Jamming</h3>
         <ul className="list use-list section-text">
           <li>
@@ -199,7 +203,7 @@ export const Home = () => {
             <p><strong>(Image here showing messaging)</strong></p>
           </li>
         </ul>
-      </section>
+      </section> */}
 
       <section className="section section--testimonials">
         <h3 className="section-heading">Hear From Our Users</h3>
