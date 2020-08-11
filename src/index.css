@@ -154,9 +154,9 @@ textarea {
 }
 
 .section--hero {
-  background-image: url('img/steet-duo-bw.jpg');
-  background-size: cover;
+  background-image: url(./assets/steet-duo-bw.jpg);
   background-position: center;
+  background-size: cover;
   height: 93vh;
   overflow: hidden;
   width: auto;
