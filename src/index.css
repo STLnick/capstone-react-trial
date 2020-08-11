@@ -103,7 +103,8 @@ textarea {
   width: 100%;
 }
 
-.menu-btn-container {
+.menu-btn-container,
+.message-icon-container {
   background: none;
   border: none;
   margin: 0;
@@ -120,7 +121,9 @@ textarea {
 }
 
 .menu-btn-container:focus,
-.menu-btn-container:hover {
+.menu-btn-container:hover,
+.message-icon-container:focus,
+.message-icon-container:hover  {
   box-shadow: 0 0 2px 2px var(--primary-light);
 }
 
