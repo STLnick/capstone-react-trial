@@ -15,7 +15,6 @@ export const Header = ({ handleClick, handleKeyDown }) => {
       </div>
       {/* IF LOGGED IN - Display Search Bar */}
       <div className="top-nav-right flex flex--justify-around">
-        {/* TODO: Hide menu on click outside of menu */}
         <button
           className="menu-btn-container"
           onClick={handleClick}

@@ -25,7 +25,8 @@ export const App = () => {
 
   return (
     <Router>
-      <div className="overlay"></div>
+      {/* onClick on div only there to close menu if overlay is present */}
+      <div className="overlay" onClick={toggleMobileMenu}></div>
       <Header handleClick={toggleMobileMenu} handleKeyDown={handleMenuBtnKeyDown} />
       {routes.map(({ Component, path }, i) => (
         <Route
