@@ -48,7 +48,7 @@ export const Section = ({ section: { button, heading, images, list, listClass, l
       {heading ? <h3 className="section-heading">{heading}</h3> : null}
       {list ? <ul className={`list section-text ${listClass}`}>{renderList()}</ul> : null}
       {text ? renderTexts() : null}
-      {images ? <img alt={images.alt} src={images.src} /> : null}
+      {images ? <img alt={images.alt} className={images.className} src={images.src} /> : null}
       {button ? button : null}
     </section>
   )
